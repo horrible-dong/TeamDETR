@@ -39,7 +39,7 @@ Without increasing parameters and calculations, our query teamwork can be easily
 | DINO-4scale-1stage-R50 |              |   12   |   44.5   |           24.2            |           48.0            |           61.2            |  47M   |                                                              |
 | DINO-4scale-1stage-R50 |      √       |   12   | **46.3** |           28.6            |           48.9            |           61.2            |  47M   | [百度网盘](https://pan.baidu.com/s/14NJTm3LLNWXHVkRG8JQ6Hg?pwd=team) / [Google Drive](https://drive.google.com/drive/folders/1PsiEGb1EFEpEeUrZEspwEmtYPYerVfS8?usp=share_link) |
 
-**Note:** The result of DAB-DETR-R50 w/ Team-DETR under the 50-epoch setting is different from what we report in the paper because we lost this checkpoint, and here is the one we retrained.
+**Note:** The result of DAB-DETR-R50 w/ Team-DETR under the 50-epoch setting is different from which we report in the paper because we lost this checkpoint, and here is the one we retrained.
 
 ## Usage
 
