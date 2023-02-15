@@ -18,7 +18,7 @@ The framework of the proposed Team DETR, which is based on the basic architectur
 
 ## Model Zoo
 
-Without increasing parameters and calculations, our query teamwork can be easily plugged into DAB-based DETRs, including DAB-DETR, DN-DETR and the single-stage DINO.
+Without increasing parameters and calculations, our query teamwork can be easily integrated into DAB-based DETRs, including DAB-DETR, DN-DETR and the single-stage DINO.
 
 [[model zoo in 百度网盘]](https://pan.baidu.com/s/1ZLPAB6Mg0jVSKxECq4f_Jg?pwd=team)（提取码team）
 
