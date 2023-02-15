@@ -79,7 +79,7 @@ In default, we divide the queries into three groups, with the proportion of 65%,
 # multi-gpu
 python -m torch.distributed.launch --nproc_per_node=2 main.py \
   --coco_path /path/to/your/COCODIR \
-  --resume /path/to/our/checkpoint \
+  --resume /path/to/your/checkpoint \
   --output_dir /path/to/your/output/dir \
   --batch_size 8 \
   --matcher team \
@@ -89,7 +89,7 @@ python -m torch.distributed.launch --nproc_per_node=2 main.py \
 # single-gpu
 python main.py \
   --coco_path /path/to/your/COCODIR \
-  --resume /path/to/our/checkpoint \
+  --resume /path/to/your/checkpoint \
   --output_dir /path/to/your/output/dir \
   --batch_size 8 \
   --matcher team \
@@ -102,7 +102,7 @@ python main.py \
 # multi-gpu
 python -m torch.distributed.launch --nproc_per_node=2 main.py \
   --coco_path /path/to/your/COCODIR \
-  --resume /path/to/our/checkpoint \
+  --resume /path/to/your/checkpoint \
   --output_dir /path/to/your/output/dir \
   --batch_size 8 \
   --matcher team \
@@ -113,7 +113,7 @@ python -m torch.distributed.launch --nproc_per_node=2 main.py \
 # single-gpu
 python main.py \
   --coco_path /path/to/your/COCODIR \
-  --resume /path/to/our/checkpoint \
+  --resume /path/to/your/checkpoint \
   --output_dir /path/to/your/output/dir \
   --batch_size 8 \
   --matcher team \
@@ -139,7 +139,7 @@ In default, we divide the queries into three groups, with the proportion of 65%,
 # multi-gpu (12-epoch setting / 1x setting)
 python -m torch.distributed.launch --nproc_per_node=2 main.py \
   --coco_path /path/to/your/COCODIR \
-  --resume /path/to/our/checkpoint \
+  --resume /path/to/your/checkpoint \
   --output_dir /path/to/your/output/dir \
   --batch_size 8 \
   --epochs 12 \
@@ -150,7 +150,7 @@ python -m torch.distributed.launch --nproc_per_node=2 main.py \
 # multi-gpu (50-epoch setting)
 python -m torch.distributed.launch --nproc_per_node=2 main.py \
   --coco_path /path/to/your/COCODIR \
-  --resume /path/to/our/checkpoint \
+  --resume /path/to/your/checkpoint \
   --output_dir /path/to/your/output/dir \
   --batch_size 8 \
   --epochs 50 \
@@ -161,7 +161,7 @@ python -m torch.distributed.launch --nproc_per_node=2 main.py \
 # single-gpu (12-epoch setting / 1x setting)
 python main.py \
   --coco_path /path/to/your/COCODIR \
-  --resume /path/to/our/checkpoint \
+  --resume /path/to/your/checkpoint \
   --output_dir /path/to/your/output/dir \
   --batch_size 8 \
   --epochs 12 \
@@ -172,7 +172,7 @@ python main.py \
 # single-gpu (50-epoch setting)
 python main.py \
   --coco_path /path/to/your/COCODIR \
-  --resume /path/to/our/checkpoint \
+  --resume /path/to/your/checkpoint \
   --output_dir /path/to/your/output/dir \
   --batch_size 8 \
   --epochs 50 \
