@@ -3,7 +3,7 @@ TEAM DETR: GUIDE QUERIES AS A PROFESSIONAL TEAM IN DETECTION TRANSFORMERS
 
 Official implementation
 
-[[paper link](https://arxiv.org/pdf/)]
+[[paper link](https://arxiv.org/abs/2302.07116)]
 
 ## Abstract
 
@@ -222,6 +222,6 @@ Unless required by applicable law or agreed to in writing, software distributed 
 
 ## BibTex
 If you find Team DETR useful in your research, please consider citing:   
-```
-Coming soon ...
+```bibtex
+coming soon ...
 ```
