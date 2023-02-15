@@ -72,7 +72,7 @@ You can download our pre-trained models ([百度网盘](https://pan.baidu.com/s/
 
 In default, we divide the queries into three groups, with the proportion of 65%, 25%, and 15%, corresponding to relative scales of (0, 0.2], (0.2, 0.4], and (0.4, 1], respectively. `--q_splits` is to set the proportion of each group. `--matcher` has two options, `ori`(original HungarianMatcher) and `team`(TeamHungarianMatcher).
 
-**Note:** The evaluation result under different batch sizes will have slight differences. The batch size we used to train each model is marked on the checkpoint filename (e.g., b8, b6). If you use the checkpoints we provide for evaluation and want to get the same results as we report, please use the same batch size as ours.
+**Note:** The evaluation result under different batch sizes will have slight differences. We used 2 GPU, and the batch size (per GPU) we used to train each model is marked on the checkpoint filename (e.g., b8, b6). If you use the checkpoints we provide for evaluation and want to get the same results as we report, please keep the same setting as ours.
 
 ```bash
 # Team-DAB-DETR 
