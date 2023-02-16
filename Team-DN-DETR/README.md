@@ -25,7 +25,7 @@ Without increasing parameters and calculations, our query teamwork can be easily
 [[model zoo in Google Drive]](https://drive.google.com/drive/folders/1vL7XnQ37W7wNF1flTm9r8vVjx_YbBZko?usp=share_link)
 
 | Model                  | w/ Team DETR | Epochs |    AP    | AP<font size=2>*s*</font> | AP<font size=2>*m*</font> | AP<font size=2>*l*</font> | Params |                       checkpoint & log                       |
-| ---------------------- | :----------: | :----: | :------: | :-----------------------: | :-----------------------: | :-----------------------: | :----: | :----------------------------------------------------------: |
+| :--------------------- | :----------: | :----: | :------: | :-----------------------: | :-----------------------: | :-----------------------: | :----: | :----------------------------------------------------------: |
 | DN-DETR-R50            |              |   12   |   37.3   |           17.2            |           40.1            |           55.6            |  44M   |                                                              |
 | DN-DETR-R50            |      √       |   12   | **37.7** |           18.0            |           40.0            |           56.8            |  44M   | [百度网盘](https://pan.baidu.com/s/1fc4144ERAjR4BpE9AjtasA?pwd=team) / [Google Drive](https://drive.google.com/drive/folders/1acSG-EuFx6UiehX1q63XAtu1EF3s29-m?usp=share_link) |
 | DAB-DETR-R50           |              |   12   |   33.7   |           15.3            |           36.5            |           49.7            |  44M   |                                                              |
@@ -185,7 +185,7 @@ Our Team DETR is based on the basic architecture of DAB-DETR and is flexible eno
 ## LICENSE
 Team DETR is released under the Apache 2.0 license. Please see the [LICENSE](LICENSE) file for more information.
 
-Copyright (c) IDEA. All rights reserved.
+Copyright (c) VIPA. All rights reserved.
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use these files except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
 
