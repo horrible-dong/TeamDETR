@@ -75,7 +75,7 @@ In default, we divide the queries into three groups, with the proportion of 65%,
 **Note:** The evaluation result under different batch sizes will have slight differences. We used 2 GPUs, and the batch size (per GPU) we used to train each model is marked on the checkpoint filename (e.g., b8, b6). If you use the checkpoints we provide for evaluation and want to get the same results as we report, please keep the same setting as ours.
 
 ```bash
-# Team-DAB-DETR 
+# Team-DAB-DETR and Team-DN-DETR
 # multi-gpu
 python -m torch.distributed.launch --nproc_per_node=2 main.py \
   --coco_path /path/to/your/COCODIR \
@@ -95,31 +95,6 @@ python main.py \
   --matcher team \
   --q_splits 65 20 15 \
   --eval
-
-# --------------------------------------------
-
-# Team-DN-DETR
-# multi-gpu
-python -m torch.distributed.launch --nproc_per_node=2 main.py \
-  --coco_path /path/to/your/COCODIR \
-  --resume /path/to/your/checkpoint \
-  --output_dir /path/to/your/output/dir \
-  --batch_size 8 \
-  --matcher team \
-  --q_splits 65 20 15 \
-  --eval \
-  --use_dn
-  
-# single-gpu
-python main.py \
-  --coco_path /path/to/your/COCODIR \
-  --resume /path/to/your/checkpoint \
-  --output_dir /path/to/your/output/dir \
-  --batch_size 8 \
-  --matcher team \
-  --q_splits 65 20 15 \
-  --eval \
-  --use_dn
 
 # --------------------------------------------
 
@@ -139,7 +114,6 @@ In default, we divide the queries into three groups, with the proportion of 65%,
 # multi-gpu (12-epoch setting / 1x setting)
 python -m torch.distributed.launch --nproc_per_node=2 main.py \
   --coco_path /path/to/your/COCODIR \
-  --resume /path/to/your/checkpoint \
   --output_dir /path/to/your/output/dir \
   --batch_size 8 \
   --epochs 12 \
@@ -150,7 +124,6 @@ python -m torch.distributed.launch --nproc_per_node=2 main.py \
 # multi-gpu (50-epoch setting)
 python -m torch.distributed.launch --nproc_per_node=2 main.py \
   --coco_path /path/to/your/COCODIR \
-  --resume /path/to/your/checkpoint \
   --output_dir /path/to/your/output/dir \
   --batch_size 8 \
   --epochs 50 \
@@ -161,7 +134,6 @@ python -m torch.distributed.launch --nproc_per_node=2 main.py \
 # single-gpu (12-epoch setting / 1x setting)
 python main.py \
   --coco_path /path/to/your/COCODIR \
-  --resume /path/to/your/checkpoint \
   --output_dir /path/to/your/output/dir \
   --batch_size 8 \
   --epochs 12 \
@@ -172,7 +144,6 @@ python main.py \
 # single-gpu (50-epoch setting)
 python main.py \
   --coco_path /path/to/your/COCODIR \
-  --resume /path/to/your/checkpoint \
   --output_dir /path/to/your/output/dir \
   --batch_size 8 \
   --epochs 50 \
@@ -201,15 +172,15 @@ Our Team DETR is based on the basic architecture of DAB-DETR and is flexible eno
 - **DAB-DETR: Dynamic Anchor Boxes are Better Queries for DETR**  
   Shilong Liu, Feng Li, Hao Zhang, Xiao Yang, Xianbiao Qi, Hang Su, Jun Zhu, Lei Zhang   
   International Conference on Learning Representations (ICLR) 2022  
-  [[Paper]](https://arxiv.org/abs/2201.12329) [[Code]](https://github.com/SlongLiu/DAB-DETR).     
+  [[Paper]](https://arxiv.org/abs/2201.12329) [[Code]](https://github.com/SlongLiu/DAB-DETR)
 - **DN-DETR: Accelerate DETR Training by Introducing Query DeNoising**  
   Feng Li*, Hao Zhang*, Shilong Liu, Jian Guo, Lionel M. Ni, Lei Zhang    
   IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2022.  
-  [[Paper]](https://arxiv.org/abs/2203.01305) [[Code]](https://github.com/FengLi-ust/DN-DETR).   
+  [[Paper]](https://arxiv.org/abs/2203.01305) [[Code]](https://github.com/FengLi-ust/DN-DETR)
 - **DINO: DETR with Improved DeNoising Anchor Boxes for End-to-End Object Detection**   
   Hao Zhang*, Feng Li*, Shilong Liu*, Lei Zhang, Hang Su, Jun Zhu, Lionel M. Ni, Heung-Yeung Shum  
   arxiv 2022   
-  [[paper]](https://arxiv.org/abs/2203.03605) [[code]](https://github.com/IDEACVR/DINO).  
+  [[paper]](https://arxiv.org/abs/2203.03605) [[code]](https://github.com/IDEACVR/DINO)
 
 ## LICENSE
 Team DETR is released under the Apache 2.0 license. Please see the [LICENSE](LICENSE) file for more information.
