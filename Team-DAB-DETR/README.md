@@ -3,7 +3,7 @@ TEAM DETR: GUIDE QUERIES AS A PROFESSIONAL TEAM IN DETECTION TRANSFORMERS
 
 Official implementation
 
-[[paper link](https://arxiv.org/abs/2302.07116)]
+[[paper link]](https://arxiv.org/abs/2302.07116)
 
 ## Abstract
 
@@ -179,7 +179,7 @@ Our Team DETR is based on the basic architecture of DAB-DETR and is flexible eno
   [[Paper]](https://arxiv.org/abs/2203.01305) [[Code]](https://github.com/FengLi-ust/DN-DETR)
 - **DINO: DETR with Improved DeNoising Anchor Boxes for End-to-End Object Detection**   
   Hao Zhang*, Feng Li*, Shilong Liu*, Lei Zhang, Hang Su, Jun Zhu, Lionel M. Ni, Heung-Yeung Shum  
-  arxiv 2022   
+  International Conference on Learning Representations (ICLR) 2023   
   [[paper]](https://arxiv.org/abs/2203.03605) [[code]](https://github.com/IDEACVR/DINO)
 
 ## LICENSE

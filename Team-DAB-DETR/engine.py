@@ -8,8 +8,6 @@ import os
 import sys
 from typing import Iterable
 
-from util.cluster import DBSCAN
-
 try:
     import ujson as json
 except:
@@ -291,18 +289,6 @@ def evaluate(model, criterion, postprocessors, data_loader, base_ds, device, out
         indexes = torch.argsort(pred_logits.max(dim=2)[0], dim=0, descending=True)  # [5000, Q]
         pred_boxes = torch.gather(pred_boxes, 0, indexes[:args.ref_topk].unsqueeze(-1).repeat(1, 1, 4))  # [topk, Q, 4]
         centroids = pred_boxes.mean(0)
-
-        # Abandoned
-        # indexes = torch.argsort(pred_logits.max(dim=2)[0], dim=0, descending=True)  # [5000, Q]
-        # pred_boxes = torch.gather(pred_boxes, 0, indexes[:args.ref_topk].unsqueeze(-1).repeat(1, 1, 4))  # [topk, Q, 4]
-        # dbscan = DBSCAN(eps=0.8, min_samples=5, metric='giou')
-        # centroids = []
-        # for boxes in pred_boxes.unbind(1):
-        #     dbscan.fit(box_ops.box_cxcywh_to_xyxy(boxes))
-        #     unique_labels, counts = torch.unique(dbscan.labels_, return_counts=True)
-        #     boxes = boxes[dbscan.labels_ == unique_labels[counts.argmax()]]
-        #     centroids.append(boxes.mean(0))
-        # centroids = torch.stack(centroids)
 
         model_without_ddp.refpoint_embed.weight.data = centroids.to(device)
         print(f"refpoints_new:\n{model_without_ddp.refpoint_embed.weight.data}")
