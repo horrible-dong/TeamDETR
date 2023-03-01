@@ -2,7 +2,7 @@ TEAM DETR: GUIDE QUERIES AS A PROFESSIONAL TEAM IN DETECTION TRANSFORMERS
 --------
 
 > Official implementation  
-> [[paper link]](https://arxiv.org/abs/2302.07116)
+> [[paper link]](https://arxiv.org/abs/2302.07116) (*Submitted on 14 Feb 2023, last revised 28 Feb 2023*)
 
 ## Abstract
 
@@ -69,7 +69,7 @@ COCODIR/
 
 You can download our pre-trained models ([百度网盘](https://pan.baidu.com/s/1ZLPAB6Mg0jVSKxECq4f_Jg?pwd=team) / [Google Drive](https://drive.google.com/drive/folders/1vL7XnQ37W7wNF1flTm9r8vVjx_YbBZko?usp=share_link))  or use your own for evaluation. 
 
-In default, we divide the queries into three groups, with the proportion of 65%, 20%, and 15%, corresponding to relative scales of (0, 0.2], (0.2, 0.4], and (0.4, 1], respectively. `--q_splits` is to set the proportion of each group. `--matcher` has two options, `ori`(original HungarianMatcher) and `team`(TeamHungarianMatcher).
+In default, we divide the queries into three groups, with the proportion of 65%, 20%, and 15%, corresponding to the relative scales of (0, 0.2], (0.2, 0.4], and (0.4, 1], respectively. `--q_splits` is to set the proportion of each group. `--matcher` has two options, `ori`(original HungarianMatcher) and `team`(TeamHungarianMatcher).
 
 **Note:** The evaluation result under different batch sizes will have slight differences. We used 2 GPUs, and the batch size (per GPU) we used to train each model is marked on the checkpoint filename (e.g., b8, b6). If you use the checkpoints we provide for evaluation and want to get the same results as we report, please keep the same setting as ours.
 
@@ -106,7 +106,7 @@ bash scripts/DINO_4scale_1stage_team_r50_e12_eval.sh /path/to/your/COCODIR /path
 
 ### Training
 
-In default, we divide the queries into three groups, with the proportion of 65%, 20%, and 15%, corresponding to relative scales of (0, 0.2], (0.2, 0.4], and (0.4, 1], respectively. `--q_splits` is to set the proportion of each group. `--matcher` has two options, `ori`(original HungarianMatcher) and `team`(TeamHungarianMatcher). If you want to change the responsible scale range of each group, you can modify matcher.py for Team-DAB-DETR and Team-DN-DETR or the config file for Team-DINO.
+In default, we divide the queries into three groups, with the proportion of 65%, 20%, and 15%, corresponding to the relative scales of (0, 0.2], (0.2, 0.4], and (0.4, 1], respectively. `--q_splits` is to set the proportion of each group. `--matcher` has two options, `ori`(original HungarianMatcher) and `team`(TeamHungarianMatcher). If you want to change the responsible scale range of each group, you can modify matcher.py for Team-DAB-DETR and Team-DN-DETR or the config file for Team-DINO.
 
 ```bash
 # Team-DAB-DETR and Team-DN-DETR
