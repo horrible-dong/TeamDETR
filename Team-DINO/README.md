@@ -2,9 +2,9 @@ Team DETR: Guide Queries as a Professional Team in Detection Transformers
 ========
 
 [![conference](https://img.shields.io/badge/Conference-ICIP_2023_(oral)-ff69b4)](https://2023.ieeeicip.org/)
-&emsp;![code](https://img.shields.io/badge/Code-Official-brightgreen)
-&emsp;![doc](https://img.shields.io/badge/Docs-Latest-orange)
-&emsp;[![license](https://img.shields.io/badge/License-Apache--2.0-blue)](https://github.com/horrible-dong/QTClassification/blob/main/LICENSE)
+&emsp;[![code](https://img.shields.io/badge/Code-Official-brightgreen)]()
+&emsp;[![doc](https://img.shields.io/badge/Docs-Latest-orange)](README.md)
+&emsp;[![license](https://img.shields.io/badge/License-Apache--2.0-blue)](LICENSE)
 
 > Authors: Tian Qiu, Linyun Zhou, Wenxiang Xu, Lechao Cheng, Zunlei Feng, Mingli Song  
 > Affiliation: Zhejiang University  
