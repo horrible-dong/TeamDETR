@@ -2,9 +2,9 @@ Team DETR: Guide Queries as a Professional Team in Detection Transformers
 ========
 
 [![conference](https://img.shields.io/badge/Conference-ICIP_2023_(oral)-ff69b4)](https://2023.ieeeicip.org/)
-&emsp;![code](https://img.shields.io/badge/Code-Official-brightgreen)
-&emsp;![doc](https://img.shields.io/badge/Docs-Latest-orange)
-&emsp;[![license](https://img.shields.io/badge/License-Apache--2.0-blue)](https://github.com/horrible-dong/QTClassification/blob/main/LICENSE)
+&emsp;[![code](https://img.shields.io/badge/Code-Official-brightgreen)]()
+&emsp;[![doc](https://img.shields.io/badge/Docs-Latest-orange)](README.md)
+&emsp;[![license](https://img.shields.io/badge/License-Apache_2.0-blue)](LICENSE)
 
 > Authors: Tian Qiu, Linyun Zhou, Wenxiang Xu, Lechao Cheng, Zunlei Feng, Mingli Song  
 > Affiliation: Zhejiang University  
@@ -224,7 +224,7 @@ Team DETR is released under the Apache 2.0 license. Please see the [LICENSE](LIC
 Copyright (c) QIU Tian and ZJU-VIPA Lab. All rights reserved.
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use these files except in compliance with
-the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
+the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0.
 
 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an
 "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific
